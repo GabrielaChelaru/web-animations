@@ -1,0 +1,169 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+
+}
+
+body{
+	background-color: black;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.eye-area{
+	width: 20px;
+	height: 40px;
+	background: #262626;
+	border-radius: 140px;
+	position: absolute;
+	top:75px;
+}
+
+.eye1{
+	left: 50px;
+}
+
+.eye2{
+	right: 50px;
+}
+
+.smile-area{
+	width: 120px;
+	height: 50px;
+	border-top: 10px solid #262626;
+	background: #262626;
+	border-radius: 0 0 120px 120px / 0 0 90px 90px;
+	position: absolute;
+	top:150px;
+	left: 25px;
+
+}
+
+.lollypop{
+	margin-top: 50px;
+	height: 175px;
+	width: 175px;
+	border-radius: 175px;
+	background: #C80000;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.44);
+}
+.shade{
+	background: #D00000;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	transform: translateY(25px);
+	margin-right: 50px;
+}
+
+.lollypop-stick{
+	height: 95px;
+	width: 10px;
+	margin-top: -1px;
+	background:#F4EAEA;
+}
+
+.candy {
+	animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+
+.lollypop1{
+	margin-top: 50px;
+	height: 175px;
+	width: 175px;
+	border-radius: 175px;
+	background: #008000;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.44);
+}
+.shade1{
+	background: #008800;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	transform: translateY(25px);
+	margin-right: 50px;
+}
+
+.lollypop-stick1{
+	height: 95px;
+	width: 10px;
+	margin-top: -1px;
+	background:#F4EAEA;
+}
+
+.candy1 {
+	float: left;
+	animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+.lollypop2 {
+	margin-top: 50px;
+	height: 175px;
+	width: 175px;
+	border-radius: 175px;
+	background: #fff44f;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.44);
+}
+.shade2 {
+	background: #fefe33;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	transform: translateY(25px);
+	margin-right: 50px;
+}
+
+.lollypop-stick2 {
+	height: 95px;
+	width: 10px;
+	margin-top: -1px;
+	background:#F4EAEA;
+}
+
+.candy2 {
+	float: right;
+	animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+
+@keyframes bounce {
+    0%   { 
+    	transform: scale(1,1)      translateY(0); }
+    
+    10%  { 
+    	transform: scale(1.1,.9)   translateY(0); }
+    
+    30%  { 
+    	transform: scale(.9,1.1)   translateY(-100px); }
+    
+    50%  { 
+    	transform: scale(1.05,.95) translateY(0); }
+    
+    57%  { 
+    	transform: scale(1,1)      translateY(-7px); }
+    
+    64%  { 
+    	transform: scale(1,1)      translateY(0); }
+    
+    100% { 
+    	transform: scale(1,1)      translateY(0); }
+}
